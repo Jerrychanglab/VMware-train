@@ -32,18 +32,8 @@
   - ### VMware Site Recovery Manager（SRM）
   - ### 备份与恢复策略
   - ### 自動化與監控
+# 第4部分：實戰應用與案例研究
 
-使用PowerCLI進行虛擬環境自動化
-vRealize Operations Manager監控與報告
-第4部分：實戰應用與案例研究
-虛擬化環境的安全性
-
-安全最佳實踐
-虛擬機與網絡的安全配置
-案例研究與實務應用
-
-不同行業中的虛擬化應用案例
-解決方案設計與實施挑戰
 ## **什麼是虛擬化?**
 ### 傳統架構，一台實體機器安裝OS後，上層服務沒使用完的都算是資源浪。
 ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/955b2768-a72c-4842-b2f2-66642f2e709d)
