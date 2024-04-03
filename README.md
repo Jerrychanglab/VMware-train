@@ -35,10 +35,7 @@
 # 第4章節：實戰應用與案例研究
 
 ## **什麼是虛擬化?**
-### 傳統架構，一台實體機器安裝OS後，上層服務沒使用完的都算是資源浪。
-![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/955b2768-a72c-4842-b2f2-66642f2e709d)
-### 透過虛擬化技術，透過Hypervsion層上可部署多個VirtualMachine，並且在每個VM上建置屬於自己的OS與APP服務。
-![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/7591795f-3b6b-4f54-905c-58fa1e5d8250)
+
 - ## 好處:
   - ### 每個機器都能有效隔離。
   - ### 資源分配能有效使用。
