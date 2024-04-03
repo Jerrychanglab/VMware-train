@@ -21,4 +21,11 @@
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/89a104fb-a0a9-40a3-8f3f-da5bc8b68713)
 
   - ## 減少硬體成本
+    ### 在傳統實體機時代，Boss告知公司需要一個完整的服務系統，又不能將Web與DB放在同個籃子裡，只能準備兩台實體機器建置環境。
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/7157f361-7a56-4685-a9fd-a56487773cdb)
+    - ### 缺點:
+      - ### 準備多台的Server，成本開銷增加。
+      - ### 因Server增加，電力消耗變大。
+      - ### 服務性質在低壓力的環境，資源會造成浪費，無法妥善率用。
+    
   - ## 提升業務靈活性和可靠性
