@@ -4,10 +4,17 @@
     - ### 實體機結構
        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0d8d2ee4-1572-43c8-9a93-38780cb8df5b)
     - ### 虛擬化結構
-       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/6217804f-8c32-47d6-bec2-d839031723bc)
+       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/47aee8af-ee9a-41d8-8723-4cd38e040e80)
+  - ## 市面虛擬化產品
+    ###  [VMware ESXi]
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/da29e106-d04b-41a3-a7a1-e79a32c49b0a)
 
-  - ## 虛擬化技術的歷史發展
-  - ## 主要虛擬化類型（如:全虛擬化、半虛擬化）
+    ###  [Nutanix AHV]
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/2a19d855-c6f5-47ce-ba03-ce790d408161)
+
+    ###  [Microsoft Hyper-V]
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/6e14123b-a9ba-4ee7-91e5-0fa40ed42d87)
+
 - # 虛擬化的優勢與應用場景
   - ## 資源共享與重分配
   - ## 減少硬體成本
