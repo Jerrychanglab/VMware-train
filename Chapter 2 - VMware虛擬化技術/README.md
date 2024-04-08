@@ -1,6 +1,8 @@
 # 第2章節：VMware虛擬化技術
 - # VMware虛擬化平台概覽
-  - ## VMware vSphere：架構與組件（包括ESXi和vCenter Server）
+  - ## VMware vSphere：架構與組件（包括ESXi和vCenter Server)
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/06e5fa5c-9a4f-4802-8204-d0a9c8df1c98)
+
   - ### VMware NSX：網路虛擬化與安全性
   - ### VMware vSAN：軟體定義存儲
 
