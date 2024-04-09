@@ -15,7 +15,8 @@
       - ### 描述: 通過Cluster的Heartbeat機制，確認ESXi的存活，如判斷異常會將該ESXi上的VM在其他ESXi上開啟。
       - ### 特點: 縮減異常中斷時間
     - ### vSphere Cluster - DRS
-      - ### 描述: DRS可分為
+      - ### 描述: 透過Cluster的偵測機制，可進行資源的自動化搬移，將每台ESXi上的資源使用率平衡。
+      - ### 特點: ESXi資源使用率平衡
   - ### VMware Network：網路虛擬化與安全性
     ### VSS(vSphere Standard Switch)
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/2eb8865d-4b8a-4d41-99ed-1e5c2e26849f)
