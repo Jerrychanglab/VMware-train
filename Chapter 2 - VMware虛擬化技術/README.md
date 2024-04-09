@@ -5,6 +5,8 @@
 
   - ### VMware Network：網路虛擬化與安全性
     ### VSS(vSphere Standard Switch)
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/199bbcf5-d866-4bf2-8785-50848a377cc3)
+
     ### VDS(vSphere Distributed Switch)
     ### NSX-T ()
   - ### VMware Storage：軟體定義存儲
