@@ -10,7 +10,7 @@
   - ### 提升業務靈活性和可靠性
 # 第2章節：VMware虛擬化技術
 - ## VMware虛擬化平台概覽
-  - ### VMware vSphere：架構與組件（包括ESXi和vCenter Server）
+  - ### VMware vSphere：架構與功能（包括ESXi和vCenter Server）
   - ### VMware NSX：網路虛擬化與安全性
   - ### VMware vSAN：軟體定義存儲
 - ## 安裝與配置VMware環境
