@@ -25,9 +25,11 @@
        - ### 描述: vSphere Cluster是一組ESXi的主機的集合體，這些主機共享相同的網路與計算支援(並能啟用HA/DRS功能)。
        - ### 特點: 資源共享、高可用性、資源最佳化。
      - ### vSphere Cluster - HA
+       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/fa934ec2-4a8c-4a4b-80dc-74d7c8493e34)
        - ### 描述: 通過Cluster的Heartbeat機制，確認ESXi的存活，如判斷異常會將該ESXi上的VM在其他ESXi上開啟。
        - ### 特點: 縮減異常中斷時間
      - ### vSphere Cluster - DRS
+       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0936fec8-db4d-49df-8fe4-9aeca34562c0)
        - ### 描述: 透過Cluster的偵測機制，可進行資源的自動化搬移，將每台ESXi上的資源使用率平衡。
        - ### 功能:
          - ### 手動: 虛擬機只會在機器開機時，會提供建議要在哪台ESXi上開啟。
