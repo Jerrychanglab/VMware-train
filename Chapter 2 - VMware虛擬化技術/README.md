@@ -2,6 +2,12 @@
 - # VMware虛擬化平台概覽
   - ## VMware vSphere：架構與組件（包括ESXi和vCenter Server)
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/06e5fa5c-9a4f-4802-8204-d0a9c8df1c98)
+    - ### VMware ESXi
+      - ### 描述: ESXi是一個虛擬化的控制器，直接安裝到物理伺服器上，ESXi為虛擬機提供高性能的基礎，支持多種作業系統，它比其他虛擬化解決方案更為安全和高效。 
+      - ### 特點: 高效、安全、提高率用率。
+    - ### VMware vCenter Server (vCSA)
+      - ### 描述: vCenter Server是vSphere的集中管理工具，提供單一的介面來管理ESXi主機和虛擬機，並可單獨透過vCetner API進行自動化管理。
+      - ### 特點: 資源共享、高可用性、資源最佳化。
 
   - ### VMware Network：網路虛擬化與安全性
     ### VSS(vSphere Standard Switch)
