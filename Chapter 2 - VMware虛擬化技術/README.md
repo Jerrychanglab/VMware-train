@@ -7,8 +7,10 @@
       - ### 特點: 高效、安全、提高率用率。
     - ### VMware vCenter Server (vCSA)
       - ### 描述: vCenter Server是vSphere的集中管理工具，提供單一的介面來管理ESXi主機和虛擬機，並可單獨透過vCetner API進行自動化管理。
+      - ### 特點: 集中控管、監控、資源最佳化。
+    - ### vSphere Cluster
+      - ### 描述: vSphere Cluster是一組ESXi的主機的集合體，這些主機共享相同的網路與計算支援。
       - ### 特點: 資源共享、高可用性、資源最佳化。
-
   - ### VMware Network：網路虛擬化與安全性
     ### VSS(vSphere Standard Switch)
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/2eb8865d-4b8a-4d41-99ed-1e5c2e26849f)
