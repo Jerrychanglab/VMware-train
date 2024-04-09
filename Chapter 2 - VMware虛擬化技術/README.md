@@ -12,7 +12,7 @@
       - ### 描述: 透過此功能，將虛擬機搬移到其他的ESXi上，達到動態搬移的效果。
       - ### 功能:
         - ### vMotion
-        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0cef8639-3024-4f42-9751-34dfa29f4273)
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/9a9841f3-10b7-495f-8023-4b74b36ca3cd)
           - ### 描述: vMotion允許將運行中的虛擬機器無縫遷移至另一台ESXi主機，不會導致虛擬機器停機或服務中斷。此過程中，虛擬機器的內存、執行狀態和網絡連接等信息被即時轉移到目標主機，實現了真正的即時遷移。
           - ### 限制: 需要相同的NFS掛載點，並且ESXi的大版本與CPU世代需要相同。
            - ### 特點: 不會有斷線產生。
