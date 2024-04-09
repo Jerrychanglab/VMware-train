@@ -5,7 +5,7 @@
 
   - ### VMware Network：網路虛擬化與安全性
     ### VSS(vSphere Standard Switch)
-    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/a43e168c-4fed-4bf6-873d-5da7daefc4a8)
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/2eb8865d-4b8a-4d41-99ed-1e5c2e26849f)
     - ### 優點:
       - ### 簡易設置: VSS相對較為簡單，適合小型或是簡單的部署環境，不需要進階的網絡配置。
       - ### 獨立配置: 每一個ESXi主機上的VSS是獨立配置的，這使得在沒有複雜需求的環境中較為容易管理。
@@ -13,6 +13,8 @@
       - ### 管理複雜: 在多個ESXi主機環境中，每個VSS都需要單獨管理和配置，這可能導致一致性和維護上的問題。(vSphere Cluster結構)
       - ### 功能受限: 相比於VDS，VSS提供的功能較少，例如(沒有網路流量In,Out切分控制/多元的負載平衡模式..等等)
     ### VDS(vSphere Distributed Switch)
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/40514460-550f-4608-bf3b-94450e41cbbf)
+
     ### NSX-T ()
   - ### VMware Storage：軟體定義存儲
 
