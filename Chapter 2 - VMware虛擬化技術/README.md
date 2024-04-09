@@ -5,8 +5,8 @@
 
   - ### VMware Network：網路虛擬化與安全性
     ### VSS(vSphere Standard Switch)
-    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/199bbcf5-d866-4bf2-8785-50848a377cc3)
-
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/a43e168c-4fed-4bf6-873d-5da7daefc4a8)
+    - ### 觀察VSS圖示，基於vSphere Cluster的DRS與HA功能，每台ESXi的vSwitch上的vLan Group都要一模一樣。
     ### VDS(vSphere Distributed Switch)
     ### NSX-T ()
   - ### VMware Storage：軟體定義存儲
