@@ -28,7 +28,7 @@
       - ### 因Server增加，電力消耗變大。
       - ### 服務性質在低壓力的環境，運算資源造成浪費，無法妥善率用。
     ### 虛擬化的時代。情境:Boss告知公司需要一個完整的服務系統，能透過同樣或更低的成本，達成超乎預期的需求，同時也能滿足突發擴充資源需求。
-    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/bd4d9432-59b4-4061-94be-26ae7756123d)
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/a86f7d13-89f1-4771-ba7f-b33e94b4c36a)
     - ### 優點:
       - ### 透過虛擬機的角度，可配發剛好的計算資源。
       - ### 未使用的資源可給新服務使用。
