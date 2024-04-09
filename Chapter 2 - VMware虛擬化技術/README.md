@@ -14,7 +14,12 @@
       - ### 功能受限: 相比於VDS，VSS提供的功能較少，例如(沒有網路流量In,Out切分控制/多元的負載平衡模式..等等)
     ### VDS(vSphere Distributed Switch)
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/40514460-550f-4608-bf3b-94450e41cbbf)
-
+    - ### 優點:
+      - ### 集中管理: VDS提供一個集中的界面來管理所有連接到它的ESXi主機，大幅減少了管理開銷和配置錯誤。
+      - ### 進階功能: VDS支持更多進階功能，例如（網路流量In,Out切分控制、標準LLDP..等等)，適合需求較高的環境。
+    - ### 缺點:
+      - ### 配置複雜：雖然集中管理降低了部分管理複雜度，但是設置和維護一個VDS環境的初期複雜度較高。
+      - ### 相依性: VDS是透過vCenter做控管，如vCetner異常會無法進行介面卡的操作。(不影響既有服務)
     ### NSX-T ()
   - ### VMware Storage：軟體定義存儲
 
