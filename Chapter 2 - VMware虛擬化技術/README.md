@@ -15,8 +15,9 @@
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/70cf466f-0734-40f9-820e-5f0e938b78a1)
           - ### 描述: vMotion允許將運行中的虛擬機器無縫遷移至另一台ESXi主機，不會導致虛擬機器停機或服務中斷。此過程中，虛擬機器的內存、執行狀態和網絡連接等信息被即時轉移到目標主機，實現了真正的即時遷移。
           - ### 限制: 需要相同的NFS掛載點，並且ESXi的大版本與CPU世代需要相同。
-           - ### 特點: 不會有斷線產生。
+          - ### 特點: 不會有斷線產生。
         - ### Storage vMotion
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/c5df013b-85d2-4bba-8bfa-383825b8bd93)
           - ### 描述: Storage vMotion允許將虛擬機器的存儲無縫遷移到不同的數據存儲，短暫的虛擬機器中斷。這對於存儲設備的維護、升級或優化存儲性能和容量非常有用。
           - ### 限制: 不需要相同的NFS掛載點，但需要ESXi的大版本與CPU世代需要相同。
           - ### 特點: 會有短暫斷線，但可跨儲存區的搬移。
