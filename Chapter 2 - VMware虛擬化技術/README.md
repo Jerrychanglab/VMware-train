@@ -82,8 +82,10 @@
     - ### 步驟二: 透過IPMI或其他方式將ISO掛載到Server上。
     - ### 步驟三: ESXi安裝流程 (請看下圖片編號順序進行點選)
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/d050533c-e2f9-4aa9-a4a4-bad9e21fd7ea)
-    - ### 步驟四: ESXi配置
-    - ### 步驟五: ESXi配置透過Command方式
+    - ### 步驟四: ESXi配置-Command執行
+      - ### Console頁面開啟ESXi Shell模式 (必須)
+        F2 -> root/Passwd -> Troubleshooting Options -> Enable ESXi Shell
+      - ### Alt + F1 進入Shell模式 （下列指令皆在Shell模式完成) 
       - ### ESXi開啟SSH
         ```vim-cmd hostsvc/enable_ssh```
 
