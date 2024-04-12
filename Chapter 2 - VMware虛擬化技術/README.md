@@ -78,11 +78,13 @@
      - ### 性能: 由於NFS是基於網絡的，網絡的擁堵和延遲可能影響存儲的性能。
 - # 安裝與配置VMware環境
   - ## ESXi安裝與配置
-    - ### 第一步：官網下載ESXi ISO
-    - ### 第二步: 透過IPMI或其他方式將ISO掛載到Server上。
-    - ### 第三步: ESXi安裝流程
+    - ### 步驟一：官網下載ESXi ISO
+    - ### 步驟二: 透過IPMI或其他方式將ISO掛載到Server上。
+    - ### 步驟三: ESXi安裝流程 (請看下圖片編號順序進行點選)
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/d050533c-e2f9-4aa9-a4a4-bad9e21fd7ea)
-
+    - ### 步驟四: 參數配置
+  
+ 
   - ## vCenter Server安裝與配置
   - ## 虛擬機建立與管理
 
