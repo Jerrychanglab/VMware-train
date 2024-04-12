@@ -86,9 +86,11 @@
     - ### 步驟五: ESXi配置透過Command方式
       - ### ESXi開啟SSH
         ```vim-cmd hostsvc/enable_ssh```
+
         ```vim-cmd hostsvc/start_ssh```
       - ### ESXi開啟Shell
         ```vim-cmd hostsvc/enable_esx_shell```
+
         ```vim-cmd hostsvc/start_esx_shell```
       - ### Lecense Key
         ```vim-cmd vimsvc/license --set <XXXXX-XXXXX-XXXXX-XXXXX-XXXXX>```
@@ -96,35 +98,42 @@
         ```esxcli system hostname set --host=<NEW-HOSTNAME>```
       - ### ESXi Mgmt IP / mask / Gateway
         ```esxcli network ip interface ipv4 set -i vmk0 -I <IP_ADDRESS> -N <SUBNET_MASK> -t static```
+
         ```esxcli network ip route ipv4 add -n default -g <GATEWAY>```
       - ### SNMP Community與啟用
         ```esxcli system snmp set -c <COMMUNITY>```
+
         ```esxcli system snmp set -e true```
       - ### ESXi Coredump啟用
         ```esxcli system coredump network set --interface-name vmk0 --server-ipv4 <IP> --server-port <PORT>```
+
         ```esxcli system coredump network set --enable true```
       - ### ESXi SYSLOG啟用
         ```esxcli system syslog config set --loghost='udp://<IP>:514'```
+
         ```esxcli system syslog reload```
       - ### NTP Server啟用
         ```esxcli system ntp set --server=<主IP> --server=<備援IP>```
+
         ```esxcli system ntp set --enabled=yes```
       - ### Power High Performance
         ```esxcli system settings advanced set --option=/Power/CpuPolicy --string-value='High Performance'```
       - ### 配置vSwitchX (Channel)
-        > 因一開始安裝，Default 會生成vSwitch0，故這邊不需要再新增vSwitch0
         ```esxcli network vswitch standard uplink add -v 'vSwitch0' -u 'vmnicX'```
+
         ```esxcli network vswitch standard uplink add -v 'vSwitch0' -u 'vmnicX'```
         > 指定兩張UPlink的vmnic卡加入vSwitch的vLan group
+        > 因ESXI安裝時vSwitch0會Default被設定出來，指定為ESXI MGMT使用
         ```esxcli network vswitch standard policy failover set -v 'vSwitch0' -l 'iphash' -a 'vmnicX,vmnicX'```
         > 將vSwitch0的兩張vmnic調整成active，並且調整Hash演算法
         ```esxcli network vswitch standard portgroup policy failover set -a vmnicX,vmnicX -p 'Management Network'```
         > Management Network的vLan group是Default建置出來，屬於vmk0的ESXi MGMT
-        > 將兩張網卡指定在active狀態
+        > 將vLan group的兩張vmnic指定到active狀態
         ```esxcli network vswitch standard portgroup policy failover set -p 'Management Network' -l 'iphash'```
-        > Channel 的演算法更改為IPHASH
+        > 將vLan group的演算法更改為HASH = IPHASH
         ```esxcli network vswitch standard portgroup set -p 'Management Network' -v <VLAN ID>```
         > 將此Default的vLan Group配置一個vLAN ID，如環境沒有vLAN結構，可忽略。
+
   - ## vCenter Server安裝與配置
   - ## 虛擬機建立與管理
 
