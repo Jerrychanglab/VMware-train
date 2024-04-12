@@ -82,9 +82,27 @@
     - ### 步驟二: 透過IPMI或其他方式將ISO掛載到Server上。
     - ### 步驟三: ESXi安裝流程 (請看下圖片編號順序進行點選)
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/d050533c-e2f9-4aa9-a4a4-bad9e21fd7ea)
-    - ### 步驟四: 參數配置
-  
- 
+    - ### 步驟四: ESXi配置
+    - ### 步驟五: ESXi配置透過Command方式
+      - ### 配置ESXi 開啟 SSH
+        ```vim-cmd hostsvc/enable_ssh```
+        ```vim-cmd hostsvc/start_ssh```
+      - ### 配置ESXi 開啟Shell
+        ```vim-cmd hostsvc/enable_esx_shell```
+        ```vim-cmd hostsvc/start_esx_shell```
+      - ### 配置Lecense Key
+        ```vim-cmd vimsvc/license --set <XXXXX-XXXXX-XXXXX-XXXXX-XXXXX>```
+      - ### 配置ESXi 名稱
+        ```esxcli system hostname set --host=<NEW-HOSTNAME>```
+      - ### 配置ESXi Mgmt IP / mask / Gateway
+        ```esxcli network ip interface ipv4 set -i vmk0 -I <IP_ADDRESS> -N <SUBNET_MASK> -t static```
+        ```esxcli network ip route ipv4 add -n default -g <GATEWAY>```
+      - ### 配置SNMP Community與啟用
+        ```esxcli system snmp set -c <COMMUNITY>```
+        ```esxcli system snmp set -e true```
+      - ### ESXi Coredump啟用
+        ```esxcli system coredump network set --interface-name vmk0 --server-ipv4 <IP> --server-port <PORT>```
+        ```esxcli system coredump network set --enable true```
   - ## vCenter Server安裝與配置
   - ## 虛擬機建立與管理
 
