@@ -122,17 +122,33 @@
         ```esxcli network vswitch standard uplink add -v 'vSwitch0' -u 'vmnicX'```
 
         ```esxcli network vswitch standard uplink add -v 'vSwitch0' -u 'vmnicX'```
+
         > 指定兩張UPlink的vmnic卡加入vSwitch的vLan group
+
         > 因ESXI安裝時vSwitch0會Default被設定出來，指定為ESXI MGMT使用
+
         ```esxcli network vswitch standard policy failover set -v 'vSwitch0' -l 'iphash' -a 'vmnicX,vmnicX'```
+
         > 將vSwitch0的兩張vmnic調整成active，並且調整Hash演算法
+
         ```esxcli network vswitch standard portgroup policy failover set -a vmnicX,vmnicX -p 'Management Network'```
+
         > Management Network的vLan group是Default建置出來，屬於vmk0的ESXi MGMT
+
         > 將vLan group的兩張vmnic指定到active狀態
+
         ```esxcli network vswitch standard portgroup policy failover set -p 'Management Network' -l 'iphash'```
+
         > 將vLan group的演算法更改為HASH = IPHASH
+
         ```esxcli network vswitch standard portgroup set -p 'Management Network' -v <VLAN ID>```
+
         > 將此Default的vLan Group配置一個vLAN ID，如環境沒有vLAN結構，可忽略。
+
+        ```esxcli network vswitch standard add -v 'vSwitch1'```
+        
+        > 新增新的vSwitch，剩下加vmnic步驟按照上面的做法。
+        
 
   - ## vCenter Server安裝與配置
   - ## 虛擬機建立與管理
