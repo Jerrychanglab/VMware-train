@@ -86,41 +86,41 @@
       - ### Console頁面開啟ESXi Shell模式 (必須)
         F2 -> root/Passwd -> Troubleshooting Options -> Enable ESXi Shell
       - ### Alt + F1 進入Shell模式 （下列指令皆在Shell模式完成) 
-      - ### ESXi開啟SSH
+      - ### 指令: ESXi開啟SSH
         ```vim-cmd hostsvc/enable_ssh```
 
         ```vim-cmd hostsvc/start_ssh```
-      - ### ESXi開啟Shell
+      - ### 指令: ESXi開啟Shell
         ```vim-cmd hostsvc/enable_esx_shell```
 
         ```vim-cmd hostsvc/start_esx_shell```
-      - ### Lecense Key
+      - ### 指令: Lecense Key
         ```vim-cmd vimsvc/license --set <XXXXX-XXXXX-XXXXX-XXXXX-XXXXX>```
-      - ### ESXi 名稱
+      - ### 指令: ESXi 名稱
         ```esxcli system hostname set --host=<NEW-HOSTNAME>```
-      - ### ESXi Mgmt IP / mask / Gateway
+      - ### 指令: ESXi Mgmt IP / mask / Gateway
         ```esxcli network ip interface ipv4 set -i vmk0 -I <IP_ADDRESS> -N <SUBNET_MASK> -t static```
 
         ```esxcli network ip route ipv4 add -n default -g <GATEWAY>```
-      - ### SNMP Community與啟用
+      - ### 指令: SNMP Community與啟用
         ```esxcli system snmp set -c <COMMUNITY>```
 
         ```esxcli system snmp set -e true```
-      - ### ESXi Coredump啟用
+      - ### 指令: ESXi Coredump啟用
         ```esxcli system coredump network set --interface-name vmk0 --server-ipv4 <IP> --server-port <PORT>```
 
         ```esxcli system coredump network set --enable true```
-      - ### ESXi SYSLOG啟用
+      - ### 指令: ESXi SYSLOG啟用
         ```esxcli system syslog config set --loghost='udp://<IP>:514'```
 
         ```esxcli system syslog reload```
-      - ### NTP Server啟用
+      - ### 指令: NTP Server啟用
         ```esxcli system ntp set --server=<主IP> --server=<備援IP>```
 
         ```esxcli system ntp set --enabled=yes```
-      - ### Power High Performance
+      - ### 指令: Power High Performance
         ```esxcli system settings advanced set --option=/Power/CpuPolicy --string-value='High Performance'```
-      - ### 配置vSwitchX (Channel)
+      - ### 指令: 配置vSwitchX (Channel)
         ```esxcli network vswitch standard uplink add -v 'vSwitch0' -u 'vmnicX'```
 
         ```esxcli network vswitch standard uplink add -v 'vSwitch0' -u 'vmnicX'```
