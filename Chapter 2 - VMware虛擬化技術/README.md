@@ -208,8 +208,10 @@
 
         ### 4. 建置vLan Group 並配置一個vLan ID
 
-        ```esxcli network vswitch standard portgroup policy failover set -a vmnicX,vmnicX -p 'Management Network'```
-
+        ```esxcli network vswitch standard portgroup add -p vLan3103_10.31.3 -v vSwitch1'```
+    
+        ```esxcli network vswitch standard portgroup set -p vLan3103_10.31.3 -v 3103```
+  
         > Management Network的vLan group是Default建置出來，屬於vmk0的ESXi MGMT
 
         > 將vLan group的兩張vmnic指定到active狀態
