@@ -152,8 +152,18 @@
         > 新增新的vSwitch，剩下加vmnic步驟按照上面的做法。
         
 
-  - ## vCenter Server安裝與配置
+  - ## vCenter Server安裝與配置 (８步驟)
+    - ### 流程
+      1. Introduction
+      2. End user license agreement
+      3. vCenter Server deploument targe
+      4. Set up vCenter Server VM
+      5. select deployment size
+      6. Select datastore
+      7. Configure network settings
   - ## 虛擬機建立與管理
+    - ### 虛擬機建置方法
+     
 
 - # 虛擬網路與存儲配置
   - ## 虛擬交換機配置
