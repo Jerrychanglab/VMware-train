@@ -144,12 +144,6 @@
         > 將vLan group的演算法更改為HASH = IPHASH
 
         ```esxcli network vswitch standard portgroup set -p 'Management Network' -v <VLAN ID>```
-
-        > 將此Default的vLan Group配置一個vLAN ID，如環境沒有vLAN結構，可忽略。
-
-        ```esxcli network vswitch standard add -v 'vSwitch1'```
-        
-        > 新增新的vSwitch，剩下加vmnic步驟按照上面的做法。
         
   - ## vCenter Server安裝與配置
     - ### 部署 - 環節一 （vCSA建置)
