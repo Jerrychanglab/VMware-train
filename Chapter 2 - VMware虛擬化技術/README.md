@@ -209,7 +209,18 @@
   
   - ## 存儲配置
       - ### vmfs(Local硬碟)建置
-        ### 1. 偵測Local硬碟代碼
+        ### 1. 類型
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0be6770f-95fa-447c-bac2-40b8f9b40c55)
+        > 選擇VMFS
+        ### 2. 名稱和裝置選取
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/f8f5f6c8-4635-42ba-b7a4-cf42314d3c74)
+        > 定義DataStore的名稱與要使用哪個Local硬碟
+        ### 3. 磁碟分割組態
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/409527b1-a543-4114-9ee9-9aa83347226e)
+        > 選擇VMFS 6與指定空間
+        ### 4. 即將完成
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/264c5709-771d-4421-b5f5-075bb8f614dd)
+        > 檢視參數，沒問題後按完成
         ```esxcli storage core path list```
         > 尋找顯示為Device Display Name: Local <品牌> Ｄisk (xxx.)的寬架，並紀錄Device:XXX.代碼
         ### 2. 格式化硬碟
