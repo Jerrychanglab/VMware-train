@@ -207,5 +207,18 @@
     
         ```esxcli network vswitch standard portgroup set -p vLan3103_10.31.3 -v 3103```
   
-  - ## 存儲配置（NFS)
+  - ## 存儲配置
+      - ### vmfs(Local硬碟)建置
+        ### 1. 偵測Local硬碟代碼
+        ```esxcli storage core path list```
+        > 尋找顯示為Device Display Name: Local <品牌> Ｄisk (xxx.)的寬架，並紀錄Device:XXX.代碼
+        ### 2. 格式化硬碟
+        ```/bin/partedUtil mklabel /vmfs/devices/disks/mpx.vmhba1:C0:T1:L0 gpt```
+        > /vmfs/devices/disks/mpx.vmhba1:C0:T1:L0 -> 這就是Device代碼，需要絕對路徑。
+        ### 3. 計算總空間的大小
+        ``` END_SECTOR=`/bin/partedUtil getptbl /vmfs/devices/disks/mpx.vmhba1:C0:T1:L0 | tail -1 | awk '{print int($1 * $2 * $3 - 1)}'` ```
+        ### 4. 輸出的大小建置磁區
+        ```partedUtil setptbl /vmfs/devices/disks/mpx.vmhba1:C0:T1:L0 gpt "1 2048 ${END_SECTOR} AA31E02A400F11DB9590000C2911D1B8 0"```
+        ### 5. 掛載空間
+        ```vmkfstools -C vmfs6 -S <datastore name> /vmfs/devices/disks/mpx.vmhba1:C0:T1:L0:1```
   - ## 虛擬機建置
