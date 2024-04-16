@@ -1,4 +1,4 @@
-# 第2章節：VMware虛擬化技術
+![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/f779b5dc-a6c8-40d8-8f8c-4d1423eff96a)# 第2章節：VMware虛擬化技術
 - # VMware虛擬化平台概覽
   - ## VMware vSphere：架構與功能（包括ESXi和vCenter Server)
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/06e5fa5c-9a4f-4802-8204-d0a9c8df1c98)
@@ -151,7 +151,6 @@
         
         > 新增新的vSwitch，剩下加vmnic步驟按照上面的做法。
         
-
   - ## vCenter Server安裝與配置
     - ### 部署 - 環節一 （vCSA建置)
       ### 1. Introduction
@@ -190,6 +189,41 @@
       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/603b8340-94ca-4c0f-8a46-8a0d4d33a9a9)
      
 - # 虛擬機/網路/存儲配置
-  - ## 虛擬機建立
-  - ## 虛擬交換機建置
-  - ## 存儲配置（NFS）
+  - ## 虛擬交換機建置(示意VSS)
+      - ### 配置vSwitch (Channel)
+        ### 1. 建置vSwitch
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/3a6df330-ab77-4250-88b9-319d59a40dc4)
+        
+        ```esxcli network vswitch standard add -v 'vSwitch1'```
+        ### 2. 將vmnic加入vSwitch
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/a2383f58-da5e-43a9-9848-93ee7e277971)
+
+        ```esxcli network vswitch standard uplink add -v 'vSwitch1' -u 'vmnic2'```
+
+        ```esxcli network vswitch standard uplink add -v 'vSwitch1' -u 'vmnic3'```
+        ### 3. 將兩張vmnic的流量演算法調整成iphash
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/d45214d5-d05b-4531-8461-c74ab4a8cb16)
+
+        ```esxcli network vswitch standard policy failover set -v 'vSwitch0' -l 'iphash' -a 'vmnic2,vmnic3'```
+
+        ### 4. 建置vLan Group 並配置一個vLan ID
+
+        ```esxcli network vswitch standard portgroup policy failover set -a vmnicX,vmnicX -p 'Management Network'```
+
+        > Management Network的vLan group是Default建置出來，屬於vmk0的ESXi MGMT
+
+        > 將vLan group的兩張vmnic指定到active狀態
+
+        ```esxcli network vswitch standard portgroup policy failover set -p 'Management Network' -l 'iphash'```
+
+        > 將vLan group的演算法更改為HASH = IPHASH
+
+        ```esxcli network vswitch standard portgroup set -p 'Management Network' -v <VLAN ID>```
+
+        > 將此Default的vLan Group配置一個vLAN ID，如環境沒有vLAN結構，可忽略。
+
+        ```esxcli network vswitch standard add -v 'vSwitch1'```
+        
+        > 新增新的vSwitch，剩下加vmnic步驟按照上面的做法。    
+  - ## 存儲配置（NFS)
+  - ## 虛擬機建置
