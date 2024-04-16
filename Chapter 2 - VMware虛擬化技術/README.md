@@ -201,31 +201,17 @@
         ```esxcli network vswitch standard uplink add -v 'vSwitch1' -u 'vmnic2'```
 
         ```esxcli network vswitch standard uplink add -v 'vSwitch1' -u 'vmnic3'```
-        ### 3. 將兩張vmnic的流量演算法調整成iphash
+        ### 3. 將兩張vmnic指派到使用中，流量演算法調整成iphash
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/d45214d5-d05b-4531-8461-c74ab4a8cb16)
 
-        ```esxcli network vswitch standard policy failover set -v 'vSwitch0' -l 'iphash' -a 'vmnic2,vmnic3'```
+        ```esxcli network vswitch standard policy failover set -v 'vSwitch1' -l 'iphash' -a 'vmnic2,vmnic3'```
 
         ### 4. 建置vLan Group 並配置一個vLan ID
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/f005f49e-4770-461a-8a16-292007695431)
 
         ```esxcli network vswitch standard portgroup add -p vLan3103_10.31.3 -v vSwitch1'```
     
         ```esxcli network vswitch standard portgroup set -p vLan3103_10.31.3 -v 3103```
   
-        > Management Network的vLan group是Default建置出來，屬於vmk0的ESXi MGMT
-
-        > 將vLan group的兩張vmnic指定到active狀態
-
-        ```esxcli network vswitch standard portgroup policy failover set -p 'Management Network' -l 'iphash'```
-
-        > 將vLan group的演算法更改為HASH = IPHASH
-
-        ```esxcli network vswitch standard portgroup set -p 'Management Network' -v <VLAN ID>```
-
-        > 將此Default的vLan Group配置一個vLAN ID，如環境沒有vLAN結構，可忽略。
-
-        ```esxcli network vswitch standard add -v 'vSwitch1'```
-        
-        > 新增新的vSwitch，剩下加vmnic步驟按照上面的做法。    
   - ## 存儲配置（NFS)
   - ## 虛擬機建置
