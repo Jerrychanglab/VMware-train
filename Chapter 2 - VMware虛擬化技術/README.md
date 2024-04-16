@@ -1,4 +1,4 @@
-![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/2ba120e8-c9dc-45d4-aba7-d34ed4dcc045)# 第2章節：VMware虛擬化技術
+# 第2章節：VMware虛擬化技術
 - # VMware虛擬化平台概覽
   - ## VMware vSphere：架構與功能（包括ESXi和vCenter Server)
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/06e5fa5c-9a4f-4802-8204-d0a9c8df1c98)
