@@ -154,17 +154,19 @@
 
   - ## vCenter Server安裝與配置 (８步驟)
     - ### 流程
-      1. Introduction
+      ### 1. Introduction
       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/7158e549-9ef8-4a6f-9a2b-761571b7215d)
-      2. End user license agreement
+      ### 2. End user license agreement
       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/6d5eece4-f3cc-4121-a342-01f73bf84e4e)
-      3. vCenter Server deploument targe
+      ### 3. vCenter Server deploument targe
       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/dcddd853-a189-47bb-baf7-29d027ca2832)
       > 輸入要部署到哪台ESXi上，並且輸入ESXi的帳號/密碼
-      4. Set up vCenter Server VM
-      5. select deployment size
-      6. Select datastore
-      7. Configure network settings
+      ### 4. Set up vCenter Server VM
+      ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/d5dddec2-c884-4777-ab49-7ac1cd12def2)
+      > 輸入要建立的vCetner Name與密碼
+      ### 5. select deployment size
+      ### 6. Select datastore
+      ### 7. Configure network settings
   - ## 虛擬機建立與管理
     - ### 虛擬機建置方法
      
