@@ -208,7 +208,7 @@
         ```esxcli network vswitch standard portgroup set -p vLan3103_10.31.3 -v 3103```
   
   - ## 存儲配置
-      - ### vmfs(Local硬碟)建置
+      - ### vmfs(Local硬碟)建置 (WEB)
         ### 1. 類型
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0be6770f-95fa-447c-bac2-40b8f9b40c55)
         > 選擇VMFS
@@ -221,6 +221,7 @@
         ### 4. 即將完成
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/264c5709-771d-4421-b5f5-075bb8f614dd)
         > 檢視參數，沒問題後按完成
+      - ### vmfs(Local硬碟)建置 (Command)    
         ```esxcli storage core path list```
         > 尋找顯示為Device Display Name: Local <品牌> Ｄisk (xxx.)的寬架，並紀錄Device:XXX.代碼
         ### 2. 格式化硬碟
