@@ -1,4 +1,4 @@
-# 第2章節：VMware虛擬化技術
+![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/2ba120e8-c9dc-45d4-aba7-d34ed4dcc045)# 第2章節：VMware虛擬化技術
 - # VMware虛擬化平台概覽
   - ## VMware vSphere：架構與功能（包括ESXi和vCenter Server)
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/06e5fa5c-9a4f-4802-8204-d0a9c8df1c98)
@@ -186,6 +186,8 @@
       ### 3. 即將完成
       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/14b0b087-dff8-4e99-b1a2-6c7856e2880e)
       > 檢查域名沒問題，即可開始部署
+    - ### 部署 - 環節三 （Web登入)
+      ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/603b8340-94ca-4c0f-8a46-8a0d4d33a9a9)
   - ## 虛擬機建立與管理
     - ### 虛擬機建置方法
      
