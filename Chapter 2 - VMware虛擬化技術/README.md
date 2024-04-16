@@ -165,8 +165,17 @@
       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/d5dddec2-c884-4777-ab49-7ac1cd12def2)
       > 輸入要建立的vCetner Name與密碼
       ### 5. select deployment size
+      ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0653bd0a-ddc8-4f4f-a4bb-c918b29602f6)
+      > 選擇要部署vCetner的資源規模
       ### 6. Select datastore
+      ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/a76998f5-dd30-49f5-852a-9030931986d1)
+      > 選擇要部署到哪個Storage空間內
       ### 7. Configure network settings
+      ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/a29ddbb7-d840-49b4-a3d7-054cdb9258a9)
+      > 如沒有DNS，FQDN可設定vCetner的IP (非推薦做法)
+      ### 8. Ready to complete stage 1
+      ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/49a63963-1438-4bad-ba9c-80a6794d3b87)
+      > 檢查參數沒問題，即可FINISH部署
   - ## 虛擬機建立與管理
     - ### 虛擬機建置方法
      
