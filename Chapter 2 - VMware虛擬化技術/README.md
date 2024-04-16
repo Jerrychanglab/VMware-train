@@ -152,8 +152,8 @@
         > 新增新的vSwitch，剩下加vmnic步驟按照上面的做法。
         
 
-  - ## vCenter Server安裝與配置 (８步驟)
-    - ### 流程
+  - ## vCenter Server安裝與配置
+    - ### 部署 - 環節一 （vCSA建置)
       ### 1. Introduction
       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/7158e549-9ef8-4a6f-9a2b-761571b7215d)
       ### 2. End user license agreement
@@ -176,6 +176,16 @@
       ### 8. Ready to complete stage 1
       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/49a63963-1438-4bad-ba9c-80a6794d3b87)
       > 檢查參數沒問題，即可FINISH部署
+    - ### 部署 - 環節二 （SSO建置)
+      ### 1. SSO組態
+      ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/e70e03f6-03b8-49e9-ad59-d80b712e349f)
+      > 網路名稱屬於透過vCetner登入時的域名，如: xxxx@vsphere.local (default)
+      ### 2. 設定 CEIP
+      ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/3bf02856-7ab9-41fc-9215-213af38b9d25)
+      > CEIP計畫，如不參加不勾選即可
+      ### 3. 即將完成
+      ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/a98c2f01-ee16-4035-9749-8829e6f725c5)
+      > 檢查域名沒問題，即可開始部署
   - ## 虛擬機建立與管理
     - ### 虛擬機建置方法
      
