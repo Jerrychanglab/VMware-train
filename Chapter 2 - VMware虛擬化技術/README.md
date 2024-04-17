@@ -221,7 +221,8 @@
         ### 4. 即將完成
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/264c5709-771d-4421-b5f5-075bb8f614dd)
         > 檢視參數，沒問題後按完成
-      - ### vmfs(Local硬碟)建置 (Command)    
+      - ### vmfs(Local硬碟)建置 (Command)
+        ### 1.查詢代碼
         ```esxcli storage core path list```
         > 尋找顯示為Device Display Name: Local <品牌> Ｄisk (xxx.)的寬架，並紀錄Device:XXX.代碼
         ### 2. 格式化硬碟
