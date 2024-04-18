@@ -268,3 +268,10 @@
         ### 5. 驗證
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/fa256646-4c81-4ae4-9821-094527042096)
         > 如掛載成功可查看到volume的空間
+      - ### **NFS 建置 (Command)** 
+        ### 1. 確認所屬vSwitch內的vLan Group內的vmk IP是否能溝通的到NFS Server IP
+        ```esxcli network ip interface ipv4 get```
+        ### 2. 掛載NFS
+        ```esxcli storage nfs add -H <NFS Server IP> -s <NFS Server放出的Volume Name> -v <自定義volume名稱>```
+        ### 3. 驗證
+        ```esxcli storage nfs list```
