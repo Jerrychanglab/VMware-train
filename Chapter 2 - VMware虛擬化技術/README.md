@@ -206,6 +206,13 @@
         ```esxcli network vswitch standard portgroup add -p vLan3103_10.31.3 -v vSwitch1'```
     
         ```esxcli network vswitch standard portgroup set -p vLan3103_10.31.3 -v 3103```
+
+        ### 5. 建置vmkernel
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0503f3a6-30a6-42cd-a4f5-e9a494b9f166)
+        
+        ```esxcli network ip interface add --interface-name=vmk1 --portgroup-name=vLan3103_10.31.3```
+        ```esxcli network ip interface ipv4 set --ipv4=10.31.3.100 --netmask=255.255.255.0 --type=static --interface-name=vmk1```
+
   
   - ## 存儲配置
       - ### vmfs(Local硬碟)建置 (WEB)
