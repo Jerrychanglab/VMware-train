@@ -250,22 +250,24 @@
         ### 5. 掛載空間
         ```vmkfstools -C vmfs6 -S <datastore name> /vmfs/devices/disks/mpx.vmhba1:C0:T1:L0:1```
       - ### NFS 建置 (WEB)
-        ### 1. 類型
+        ### 1. 確認所屬vSwitch內的vLan Group內的vmk IP是否能溝通的到NFS Server IP
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/c41081ed-b1e5-4a47-83a4-c105faccaffd)
+        ### 2. 類型
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/34f6984a-d21d-49ce-addf-10b6eee07e78)
         > 選擇NFS
-        ### 2. NFS版本
+        ### 3. NFS版本
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/b9668442-96eb-4d7c-b6cd-efea31a068de)
         > 選擇NFS 3，如果要選擇NFS4.1需看您的後端設備是否有支援。
-        ### 3. 名稱和組態
+        ### 4. 名稱和組態
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/34d00d06-3369-4ab6-b8a1-d821931ce2f6)
         > 欄位填寫
           #### 3-1. 名稱: <填寫自定義識別名稱>
           #### 3-2. 資料夾: 填寫NFS Server放給您的路徑
           #### 3-3. 伺服器: NFS Server的IP
-        ### 4. 即將完成
+        ### 5. 即將完成
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/2ac363a8-a432-46c0-a308-b9011d786564)
         > 確認參數沒問題，即可點選完成
-        ### 5. 驗證
+        ### 6. 驗證
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/fa256646-4c81-4ae4-9821-094527042096)
         > 如掛載成功可查看到volume的空間
       - ### **NFS 建置 (Command)** 
