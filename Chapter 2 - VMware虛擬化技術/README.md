@@ -246,4 +246,18 @@
         ```partedUtil setptbl /vmfs/devices/disks/mpx.vmhba1:C0:T1:L0 gpt "1 2048 ${END_SECTOR} AA31E02A400F11DB9590000C2911D1B8 0"```
         ### 5. 掛載空間
         ```vmkfstools -C vmfs6 -S <datastore name> /vmfs/devices/disks/mpx.vmhba1:C0:T1:L0:1```
-  - ## 虛擬機建置
+      - ### NFS 建置 (WEB)
+        ### 1. 類型
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/34f6984a-d21d-49ce-addf-10b6eee07e78)
+        > 選擇NFS
+        ### 2. NFS版本
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/b9668442-96eb-4d7c-b6cd-efea31a068de)
+        > 選擇NFS 3，如果要選擇NFS4.1需看您的後端設備是否有支援。
+        ### 3. 名稱和組態
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/34d00d06-3369-4ab6-b8a1-d821931ce2f6)
+        > 欄位填寫
+          #### 3-1. 名稱: <填寫自定義識別名稱>
+          #### 3-2. 資料夾: 填寫NFS Server放給您的路徑
+          #### 3-3. 伺服器: NFS Server的IP
+        ### 4. 即將完成
+   
