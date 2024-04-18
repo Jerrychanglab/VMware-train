@@ -233,6 +233,9 @@
         ### 4. 即將完成
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/264c5709-771d-4421-b5f5-075bb8f614dd)
         > 檢視參數，沒問題後按完成
+        ### 5. 驗證
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/7f138a69-7d86-421e-be02-e2bdffa62194)
+        > 如掛載成功可查看到Local空間
       - ### vmfs(Local硬碟)建置 (Command)
         ### 1.查詢代碼
         ```esxcli storage core path list```
