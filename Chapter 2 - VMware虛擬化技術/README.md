@@ -211,8 +211,13 @@
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0503f3a6-30a6-42cd-a4f5-e9a494b9f166)
         
         ```esxcli network ip interface add --interface-name=vmk1 --portgroup-name=vLan3103_10.31.3```
-        ```esxcli network ip interface ipv4 set --ipv4=10.31.3.100 --netmask=255.255.255.0 --type=static --interface-name=vmk1```
 
+        ### 6. 配置vmkernel IP
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/3ea38079-4ee4-4793-8203-4276da96b93f)
+
+        ```esxcli network ip interface ipv4 set --ipv4=10.31.3.100 --netmask=255.255.255.0 --type=static --interface-name=vmk1```
+      
+        > vmk IP可指派功能 (vMotion / Fault Tolerance / Management ...等等)
   
   - ## 存儲配置
       - ### vmfs(Local硬碟)建置 (WEB)
