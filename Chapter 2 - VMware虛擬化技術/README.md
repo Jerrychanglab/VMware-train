@@ -260,4 +260,8 @@
           #### 3-2. 資料夾: 填寫NFS Server放給您的路徑
           #### 3-3. 伺服器: NFS Server的IP
         ### 4. 即將完成
-   
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/2ac363a8-a432-46c0-a308-b9011d786564)
+        > 確認參數沒問題，即可點選完成
+        ### 5. 驗證
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/fa256646-4c81-4ae4-9821-094527042096)
+        > 如掛載成功可查看到volume的空間
