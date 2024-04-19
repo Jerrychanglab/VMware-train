@@ -220,10 +220,10 @@
         > vmk IP可指派功能 (vMotion / Fault Tolerance / Management ...等等)
   
   - ## 存儲配置
-      - ### vmfs(Local硬碟)建置 (WEB)
-        > 達成目標如下圖，一台ESXi掛載Local Datastore & NFS Mount
-        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/d7cdcf3d-58b4-4680-9ae9-2d0c8865ec19)
+    > 達成目標如下圖，一台ESXi掛載Local Datastore & NFS Mount
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/aa625e8c-d47a-4fa0-8e34-481c6443de91)
 
+      - ### vmfs(Local硬碟)建置 (WEB)
         ### 1. 類型
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0be6770f-95fa-447c-bac2-40b8f9b40c55)
         > 選擇VMFS
