@@ -221,6 +221,9 @@
   
   - ## 存儲配置
       - ### vmfs(Local硬碟)建置 (WEB)
+        > 達成目標如下圖，一台ESXi掛載Local Datastore & NFS Mount
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/d7cdcf3d-58b4-4680-9ae9-2d0c8865ec19)
+
         ### 1. 類型
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0be6770f-95fa-447c-bac2-40b8f9b40c55)
         > 選擇VMFS
