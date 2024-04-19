@@ -280,3 +280,4 @@
         ```esxcli storage nfs add -H <NFS Server IP> -s <NFS Server放出的Volume Name> -v <自定義volume名稱>```
         ### 3. 驗證
         ```esxcli storage nfs list```
+  - ## 虛擬機配置
