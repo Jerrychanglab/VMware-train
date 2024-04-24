@@ -1,4 +1,3 @@
-![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/192f3c6d-1549-4ddd-bb46-1c56f902707d)- # 虛擬機/網路/存儲配置
   - ## 虛擬交換機建置(示意VSS)
       - ### 配置vSwitch (Channel)
         ### 1. 建置vSwitch
