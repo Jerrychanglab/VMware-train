@@ -121,9 +121,10 @@
            - #### 3-3. PCI裝置傳遞: 直接將物理的PCI(網卡)直接分配給虛擬機使用，繞過VMware的虛擬化層。
              > 網路傳輸高敏感服務，通常不常使用，因此模式會導致多個輔助功能失效，如:vMotion。
       - ### Disk 說明         
-       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/ccb6abf1-d436-4454-a3e6-ab2f8e65dbb4)
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/ccb6abf1-d436-4454-a3e6-ab2f8e65dbb4)
           ### 1.硬碟空間: 填寫所需的硬碟Size。(後續擴充Size，如Linux機型，需透過第三方gparted-live.iso或其他軟件)
           ### 2.磁碟佈建:
-            - #### 完整佈建消極式歸零(Thick Provision Lazy Zeroed): 虛擬硬碟的存儲空間將立即在物理存儲上分配其所需的全部容量，這些空間不會立即清零，僅在虛擬機首次寫入到未使用的磁碟塊時才會。
-            - #### 完整佈建積極式歸零(Thick Provision Eager Zeroed): 完整佈建積極式歸零會立即分配虛擬硬碟需要的全部空間，並且在創建虛擬硬碟時，就對整個磁碟進行歸零操作。(Fault Tolerance的必要條件)
-            - #### 精簡佈建(Thin Provisioning): 虛擬硬碟最初只會使用實際需要儲存數據的最少空間，並隨著數據的增加而動態擴展到其配置的容量。
+          ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/854aaa99-673c-4224-be1d-059419ceaa28)
+           - #### 2-1. 完整佈建消極式歸零(Thick Provision Lazy Zeroed): 虛擬硬碟的存儲空間將立即在物理存儲上分配其所需的全部容量，這些空間不會立即清零，僅在虛擬機首次寫入到未使用的磁碟塊時才會。
+           - #### 2-2. 完整佈建積極式歸零(Thick Provision Eager Zeroed): 完整佈建積極式歸零會立即分配虛擬硬碟需要的全部空間，並且在創建虛擬硬碟時，就對整個磁碟進行歸零操作。(Fault Tolerance的必要條件)
+           - #### 2-3. 精簡佈建(Thin Provisioning): 虛擬硬碟最初只會使用實際需要儲存數據的最少空間，並隨著數據的增加而動態擴展到其配置的容量。
