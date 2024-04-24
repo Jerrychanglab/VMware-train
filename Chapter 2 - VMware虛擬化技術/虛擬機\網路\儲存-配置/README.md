@@ -120,4 +120,10 @@
               ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/3ec793e1-8b31-4448-9751-d69d2a750c60)
            - #### 3-3. PCI裝置傳遞: 直接將物理的PCI(網卡)直接分配給虛擬機使用，繞過VMware的虛擬化層。
              > 網路傳輸高敏感服務，通常不常使用，因此模式會導致多個輔助功能失效，如:vMotion。
-               
+      - ### Disk 說明         
+       ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/ccb6abf1-d436-4454-a3e6-ab2f8e65dbb4)
+          ### 1.硬碟空間: 填寫所需的硬碟Size。(後續擴充Size，如Linux機型，需透過第三方gparted-live.iso或其他軟件)
+          ### 2.磁碟佈建:
+            - #### 完整佈建消極式歸零:
+            - #### 完整佈建積極式歸零:
+            - #### 精簡佈建:
