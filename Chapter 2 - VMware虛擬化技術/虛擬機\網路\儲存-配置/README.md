@@ -97,3 +97,6 @@
         ### 3. 驗證
         ```esxcli storage nfs list```
   - ## 虛擬機配置
+    ### 虛擬機的建置可切分4大區塊(CPU ／RAM / Network / Disk )組合成，讓機器生成提供服務。
+      - ### CPU 說明
+        
