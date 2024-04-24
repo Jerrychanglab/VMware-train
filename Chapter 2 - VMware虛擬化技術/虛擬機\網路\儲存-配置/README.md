@@ -1,4 +1,4 @@
-- # 虛擬機/網路/存儲配置
+![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/192f3c6d-1549-4ddd-bb46-1c56f902707d)- # 虛擬機/網路/存儲配置
   - ## 虛擬交換機建置(示意VSS)
       - ### 配置vSwitch (Channel)
         ### 1. 建置vSwitch
@@ -96,8 +96,25 @@
         ```esxcli storage nfs add -H <NFS Server IP> -s <NFS Server放出的Volume Name> -v <自定義volume名稱>```
         ### 3. 驗證
         ```esxcli storage nfs list```
-  - ## 虛擬機配置與OS安裝
-    ### 虛擬機建置的資源組成(CPU、RAM、Network、Disk)
+  - ## 虛擬機建置
+    ### 生成虛擬機框架
+    ### 1. 新增虛擬機器
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/02f580ec-cfef-4955-8ba1-db825118e8b4)
+    ### 2. 選取建制類型(此章節說明建立新的虛擬機器)
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/43ce4502-75a8-40be-a6e4-c5a605d104e8)
+    ### 3. 選取名稱和資料夾
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/27ac1d74-f24d-41be-b82e-1e574c0577ce)
+    ### 4. 選取計算資源
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/79721421-2960-477d-b3a3-0e1d6b010ae0)
+    ### 5. 選取儲存區
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/ba4799e5-4074-4b68-beaa-e148ce35a0a8)
+    ### 6. 選曲相容性
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0c4a5949-0cb1-43c7-88c1-683a31e199ac)
+      > 差異在於組態上限的部分
+    ### 7. 選取客體作業系統
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/56b69c66-f82c-4048-be3d-dce15635e4b4)
+      > 此步驟需選擇您要安裝的OS (如: Linux -> Redhat 9)，關係到default提供的預設值。
+    ### 8. 自訂硬體(CPU、RAM、Network、Disk)
       - ### CPU 說明
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/cdcbaae8-ce7c-4971-8eb9-b104563331f1)
           ### 1. CPU熱插拔: 機器在開機狀態下能動態新增CPU數量。(縮小需要關機)
