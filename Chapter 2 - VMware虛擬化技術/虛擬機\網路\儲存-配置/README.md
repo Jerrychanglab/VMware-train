@@ -16,7 +16,7 @@
 
         ```esxcli network vswitch standard policy failover set -v 'vSwitch1' -l 'iphash' -a 'vmnic2,vmnic3'```
 
-        ### 4. 建置vLan Group 並配置一個vLan ID
+        ### 4. 建置Network Tag並配置一個vLan ID
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/f005f49e-4770-461a-8a16-292007695431)
 
         ```esxcli network vswitch standard portgroup add -p vLan3103_10.31.3 -v vSwitch1'```
@@ -100,8 +100,18 @@
     ### 虛擬機的建置可切分4大區塊(CPU ／RAM / Network / Disk )組合成，讓機器生成提供服務。
       - ### CPU 說明
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/cdcbaae8-ce7c-4971-8eb9-b104563331f1)
-        ### 1. CPU熱插拔: 機器在開機狀態下能動態新增CPU數量。
-        ### 2. 保留: 讓機器鎖定CPU資源保障，用於當ESXi機器資源競爭時，能有效的保留此虛擬機的資源。
-        ### 3. 限制: 讓CPU的資源使用的上限定義，防止此機器資源使用過高時，影響其他虛擬機。
-        ### 4. 共用率: 當物理CPU被多個虛擬機共用時，可透過此設定獲得相對應的資源比例，資源充足時不會有明顯感覺。
+          ### 1. CPU熱插拔: 機器在開機狀態下能動態新增CPU數量。(縮小需要關機)
+          ### 2. 保留: 讓機器鎖定CPU資源保障，用於當ESXi機器資源競爭時，能有效的保留此虛擬機的資源。 
+          ### 3. 限制: 讓CPU的資源使用的上限定義，防止此機器資源使用過高時，影響其他虛擬機。
+          ### 4. 共用率: 當物理CPU被多個虛擬機共用時，可透過此設定獲得相對應的資源比例，資源充足時不會有明顯感覺。
+      - ### RAM 說明
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/64d644ce-0d55-4097-b010-13adba86f421)
+          ### 1. 記憶體熱插拔: 機器在開機狀態，能動態的新增記憶體Size。(縮小需要關機)
+          ### 2. 保留: 同上。
+          ### 3. 限制: 同上。
+          ### 4. 共用率: 同上。
+      - ### Network 說明
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/bc66bd8b-7ed4-4e85-9864-75820d35485b)
+          ### 1. Tag Network選擇: 選擇透過
 
+          ### 1.
