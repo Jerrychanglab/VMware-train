@@ -97,7 +97,6 @@
         ### 3. 驗證
         ```esxcli storage nfs list```
   - ## 虛擬機建置
-    ### 生成虛擬機框架
     ### 1. 新增虛擬機器
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/02f580ec-cfef-4955-8ba1-db825118e8b4)
     ### 2. 選取建制類型(此章節說明建立新的虛擬機器)
@@ -115,6 +114,7 @@
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/56b69c66-f82c-4048-be3d-dce15635e4b4)
     > 此步驟需選擇您要安裝的OS (如: Linux -> Redhat 9)，關係到default提供的預設值。
     ### 8. 自訂硬體(CPU、RAM、Network、Disk)
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/f11bb437-beaf-477b-931d-62ecf0182d5f)
       - ### CPU 說明
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/cdcbaae8-ce7c-4971-8eb9-b104563331f1)
           ### 1. CPU熱插拔: 機器在開機狀態下能動態新增CPU數量。(縮小需要關機)
@@ -145,4 +145,5 @@
            - #### 2-1. 完整佈建消極式歸零(Thick Provision Lazy Zeroed): 虛擬硬碟的存儲空間將立即在物理存儲上分配其所需的全部容量，這些空間不會立即清零，僅在虛擬機首次寫入到未使用的磁碟塊時才會。
            - #### 2-2. 完整佈建積極式歸零(Thick Provision Eager Zeroed): 完整佈建積極式歸零會立即分配虛擬硬碟需要的全部空間，並且在創建虛擬硬碟時，就對整個磁碟進行歸零操作。(Fault Tolerance的必要條件)
            - #### 2-3. 精簡佈建(Thin Provisioning): 虛擬硬碟最初只會使用實際需要儲存數據的最少空間，並隨著數據的增加而動態擴展到其配置的容量。
-    ### OS安裝
+    ### 9. 即將完成
+    > 確認沒問題即可點選完成
