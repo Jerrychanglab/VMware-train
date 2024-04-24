@@ -96,8 +96,8 @@
         ```esxcli storage nfs add -H <NFS Server IP> -s <NFS Server放出的Volume Name> -v <自定義volume名稱>```
         ### 3. 驗證
         ```esxcli storage nfs list```
-  - ## 虛擬機配置
-    ### 虛擬機的建置可切分4大區塊(CPU ／RAM / Network / Disk )組合成，讓機器生成提供服務。
+  - ## 虛擬機配置與OS安裝
+    ### 虛擬機建置的資源組成(CPU、RAM、Network、Disk)
       - ### CPU 說明
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/cdcbaae8-ce7c-4971-8eb9-b104563331f1)
           ### 1. CPU熱插拔: 機器在開機狀態下能動態新增CPU數量。(縮小需要關機)
@@ -128,3 +128,4 @@
            - #### 2-1. 完整佈建消極式歸零(Thick Provision Lazy Zeroed): 虛擬硬碟的存儲空間將立即在物理存儲上分配其所需的全部容量，這些空間不會立即清零，僅在虛擬機首次寫入到未使用的磁碟塊時才會。
            - #### 2-2. 完整佈建積極式歸零(Thick Provision Eager Zeroed): 完整佈建積極式歸零會立即分配虛擬硬碟需要的全部空間，並且在創建虛擬硬碟時，就對整個磁碟進行歸零操作。(Fault Tolerance的必要條件)
            - #### 2-3. 精簡佈建(Thin Provisioning): 虛擬硬碟最初只會使用實際需要儲存數據的最少空間，並隨著數據的增加而動態擴展到其配置的容量。
+    ### OS安裝
