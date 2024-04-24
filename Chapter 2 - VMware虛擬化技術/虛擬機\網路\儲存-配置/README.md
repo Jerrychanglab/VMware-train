@@ -17,19 +17,19 @@
         ```esxcli network vswitch standard policy failover set -v 'vSwitch1' -l 'iphash' -a 'vmnic2,vmnic3'```
 
         ### 4. 建置Network Tag並配置一個vLan ID
-        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/f005f49e-4770-461a-8a16-292007695431)
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/00e16780-fdfb-4786-a535-29eeaf0d0f08)
 
         ```esxcli network vswitch standard portgroup add -p vLan3103_10.31.3 -v vSwitch1'```
     
         ```esxcli network vswitch standard portgroup set -p vLan3103_10.31.3 -v 3103```
 
         ### 5. 建置vmkernel
-        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0503f3a6-30a6-42cd-a4f5-e9a494b9f166)
-        
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/cbc1b779-3a2a-4c22-a6db-7d7f22080e8d)
+
         ```esxcli network ip interface add --interface-name=vmk1 --portgroup-name=vLan3103_10.31.3```
 
         ### 6. 配置vmkernel IP
-        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/3ea38079-4ee4-4793-8203-4276da96b93f)
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/8e74c8c2-a0b1-4e8d-b111-2e08f7268cbc)
 
         ```esxcli network ip interface ipv4 set --ipv4=10.31.3.100 --netmask=255.255.255.0 --type=static --interface-name=vmk1```
       
@@ -37,7 +37,7 @@
   
   - ## 存儲配置
     > 達成目標如下圖，一台ESXi掛載Local Datastore & NFS Mount
-    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/aa625e8c-d47a-4fa0-8e34-481c6443de91)
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/893709ff-3ff5-41ad-a7ed-b91fb7e124ba)
 
       - ### vmfs(Local硬碟)建置 (WEB)
         ### 1. 類型
