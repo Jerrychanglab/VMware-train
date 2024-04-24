@@ -112,6 +112,9 @@
           ### 4. 共用率: 同上。
       - ### Network 說明
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/bc66bd8b-7ed4-4e85-9864-75820d35485b)
-          ### 1. Tag Network選擇: 選擇透過
-
-          ### 1.
+          ### 1. Tag Network選擇: 選擇透過哪個Network Tag進行網路傳輸。
+          ### 2. 狀態: 開機時是否要自動啟動網卡。(如沒有勾選，虛擬機開機時網卡不會自動連線)
+          ### 3. 介面卡類型:
+           ### 3-1. E1000:
+           ### 3-2. VMXNET3:
+           ### 3-3. PCI裝置傳遞:
