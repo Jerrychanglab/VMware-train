@@ -106,7 +106,7 @@
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/79721421-2960-477d-b3a3-0e1d6b010ae0)
     ### 5. 選取儲存區
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/ba4799e5-4074-4b68-beaa-e148ce35a0a8)
-    ### 6. 選曲相容性
+    ### 6. 選取相容性
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/0c4a5949-0cb1-43c7-88c1-683a31e199ac)
     > 差異在於組態上限的部分
     ### 7. 選取客體作業系統
