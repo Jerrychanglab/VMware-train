@@ -18,3 +18,5 @@
     > 長期快照未移除的機器。
     - ### 孤立的磁碟
     > 抓取孤立的磁碟，未給任何人使用。
+  - ### 工作負載放置
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/b4ddb7bb-85c1-4fd6-aa49-f5815dccb028)
