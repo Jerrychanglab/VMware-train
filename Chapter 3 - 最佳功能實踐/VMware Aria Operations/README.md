@@ -20,3 +20,7 @@
     > 抓取孤立的磁碟，未給任何人使用。
   - ### 工作負載放置
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/b4ddb7bb-85c1-4fd6-aa49-f5815dccb028)
+- ## 監控與預測
+  - ### 儀表板
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/e54b1b4b-6e5a-4568-b558-3bf81d757ec0)
+    - ### 效能
