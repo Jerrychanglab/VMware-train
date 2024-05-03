@@ -114,35 +114,35 @@
     > 此步驟需選擇您要安裝的OS (如: Linux -> Redhat 9)，關係到default提供的預設值。
     ### 8. 自訂硬體(CPU、RAM、Network、Disk)
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/f11bb437-beaf-477b-931d-62ecf0182d5f)
-      - ### CPU 說明
+    - ### CPU 說明
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/cdcbaae8-ce7c-4971-8eb9-b104563331f1)
-          ### 1. CPU熱插拔: 機器在開機狀態下能動態新增CPU數量。(縮小需要關機)
-          ### 2. 保留: 讓機器鎖定CPU資源保障，用於當ESXi機器資源競爭時，能有效的保留此虛擬機的資源。 
-          ### 3. 限制: 讓CPU的資源使用的上限定義，防止此機器資源使用過高時，影響其他虛擬機。
-          ### 4. 共用率: 當物理CPU被多個虛擬機共用時，可透過此設定獲得相對應的資源比例，資源充足時不會有明顯感覺。
-      - ### RAM 說明
+        ### 1. CPU熱插拔: 機器在開機狀態下能動態新增CPU數量。(縮小需要關機)
+        ### 2. 保留: 讓機器鎖定CPU資源保障，用於當ESXi機器資源競爭時，能有效的保留此虛擬機的資源。 
+        ### 3. 限制: 讓CPU的資源使用的上限定義，防止此機器資源使用過高時，影響其他虛擬機。
+        ### 4. 共用率: 當物理CPU被多個虛擬機共用時，可透過此設定獲得相對應的資源比例，資源充足時不會有明顯感覺。
+    - ### RAM 說明
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/64d644ce-0d55-4097-b010-13adba86f421)
-          ### 1. 記憶體熱插拔: 機器在開機狀態，能動態的新增記憶體Size。(縮小需要關機)
-          ### 2. 保留: 同上。
-          ### 3. 限制: 同上。
-          ### 4. 共用率: 同上。
-      - ### Network 說明
+        ### 1. 記憶體熱插拔: 機器在開機狀態，能動態的新增記憶體Size。(縮小需要關機)
+        ### 2. 保留: 同上。
+        ### 3. 限制: 同上。
+        ### 4. 共用率: 同上。
+    - ### Network 說明
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/4059b3f1-f543-4dc8-8829-9723da00c454)
-          ### 1. Tag Network選擇: 選擇透過哪個Network Tag進行網路傳輸。
-          ### 2. 狀態: 開機時是否要自動啟動網卡。(如沒有勾選，虛擬機開機時網卡不會自動連線)
-          ### 3. 介面卡類型:
-           - #### 3-1. E1000: 不需安裝額外的驅動程序即可使用，但傳輸能力只支援1G。
-           - #### 3-2. VMXNET3: 通常線上環境推薦的模式，可支援到10G的網路傳輸，但前提需安裝vmware tools。
-              ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/3ec793e1-8b31-4448-9751-d69d2a750c60)
-           - #### 3-3. PCI裝置傳遞: 直接將物理的PCI(網卡)直接分配給虛擬機使用，繞過VMware的虛擬化層。
-             > 網路傳輸高敏感服務，通常不常使用，因此模式會導致多個輔助功能失效，如:vMotion。
-      - ### Disk 說明         
+        ### 1. Tag Network選擇: 選擇透過哪個Network Tag進行網路傳輸。
+        ### 2. 狀態: 開機時是否要自動啟動網卡。(如沒有勾選，虛擬機開機時網卡不會自動連線)
+        ### 3. 介面卡類型:
+        - #### 3-1. E1000: 不需安裝額外的驅動程序即可使用，但傳輸能力只支援1G。
+        - #### 3-2. VMXNET3: 通常線上環境推薦的模式，可支援到10G的網路傳輸，但前提需安裝vmware tools。
+          ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/3ec793e1-8b31-4448-9751-d69d2a750c60)
+        - #### 3-3. PCI裝置傳遞: 直接將物理的PCI(網卡)直接分配給虛擬機使用，繞過VMware的虛擬化層。
+          > 網路傳輸高敏感服務，通常不常使用，因此模式會導致多個輔助功能失效，如:vMotion。
+    - ### Disk 說明         
         ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/ccb6abf1-d436-4454-a3e6-ab2f8e65dbb4)
-          ### 1.硬碟空間: 填寫所需的硬碟Size。(後續擴充Size，如Linux機型，需透過第三方gparted-live.iso或其他軟件)
-          ### 2.磁碟佈建:
-          ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/854aaa99-673c-4224-be1d-059419ceaa28)
-           - #### 2-1. 完整佈建消極式歸零(Thick Provision Lazy Zeroed): 虛擬硬碟的存儲空間將立即在物理存儲上分配其所需的全部容量，這些空間不會立即清零，僅在虛擬機首次寫入到未使用的磁碟塊時才會。
-           - #### 2-2. 完整佈建積極式歸零(Thick Provision Eager Zeroed): 完整佈建積極式歸零會立即分配虛擬硬碟需要的全部空間，並且在創建虛擬硬碟時，就對整個磁碟進行歸零操作。(Fault Tolerance的必要條件)
-           - #### 2-3. 精簡佈建(Thin Provisioning): 虛擬硬碟最初只會使用實際需要儲存數據的最少空間，並隨著數據的增加而動態擴展到其配置的容量。
+        ### 1.硬碟空間: 填寫所需的硬碟Size。(後續擴充Size，如Linux機型，需透過第三方gparted-live.iso或其他軟件)
+        ### 2.磁碟佈建:
+        ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/854aaa99-673c-4224-be1d-059419ceaa28)
+        - #### 2-1. 完整佈建消極式歸零(Thick Provision Lazy Zeroed): 虛擬硬碟的存儲空間將立即在物理存儲上分配其所需的全部容量，這些空間不會立即清零，僅在虛擬機首次寫入到未使用的磁碟塊時才會。
+        - #### 2-2. 完整佈建積極式歸零(Thick Provision Eager Zeroed): 完整佈建積極式歸零會立即分配虛擬硬碟需要的全部空間，並且在創建虛擬硬碟時，就對整個磁碟進行歸零操作。(Fault Tolerance的必要條件)
+        - #### 2-3. 精簡佈建(Thin Provisioning): 虛擬硬碟最初只會使用實際需要儲存數據的最少空間，並隨著數據的增加而動態擴展到其配置的容量。
     ### 9. 即將完成
     > 確認沒問題即可點選完成
