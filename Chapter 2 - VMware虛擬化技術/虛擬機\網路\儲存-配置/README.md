@@ -1,4 +1,4 @@
-- # 虛擬交換機建置(示意VSS)
+- # 虛擬交換機建置(VSS)(Command)
   - ## 配置vSwitch (Channel)
     ### 1. 建置vSwitch
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/3a6df330-ab77-4250-88b9-319d59a40dc4)
@@ -33,7 +33,10 @@
     ```esxcli network ip interface ipv4 set --ipv4=10.31.3.100 --netmask=255.255.255.0 --type=static --interface-name=vmk1```
       
     > vmk IP可指派功能 (vMotion / Fault Tolerance / Management ...等等)
-  
+- # 虛擬交換機建置(示意VDS)(WEB)
+  - ## 建置Distributed Switch
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/43ae9b6c-58b1-4d07-af2e-72a7f6e0bebc)
+    ### 1. 
 - # 存儲配置
   > 達成目標如下圖，一台ESXi掛載Local Datastore & NFS Mount
   ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/893709ff-3ff5-41ad-a7ed-b91fb7e124ba)
