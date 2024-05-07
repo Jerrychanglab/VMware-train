@@ -66,6 +66,13 @@
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/92fa2f2c-4bf0-46ec-b90b-e2c5ec329648)
     ### 2-7. 檢查
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/bbab0430-a4f8-456f-aeb9-eee23b70c2c5)
+    ## 3. 調整流量演算法
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/72ff8baf-c958-490e-b6dc-b3c8222ef9b7)
+    ### 3-1. 選擇負載平衡模式
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/d0915152-d894-440f-a357-f7206af66051)
+    ## 4. 配置vLan
+    ### 4-1. 設定vLan
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/bdde5654-0fb5-424d-bcd4-e6d432927a4f)
 
 - # 存儲配置
   > 達成目標如下圖，一台ESXi掛載Local Datastore & NFS Mount
