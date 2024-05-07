@@ -34,9 +34,18 @@
       
     > vmk IP可指派功能 (vMotion / Fault Tolerance / Management ...等等)
 - # 虛擬交換機建置(示意VDS)(WEB)
-  - ## 建置Distributed Switch
+    ## 1. 建置Distributed Switch
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/43ae9b6c-58b1-4d07-af2e-72a7f6e0bebc)
-    ### 1. 
+    ### 1-1. 名稱和位置
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/bc3b3ebb-920b-43b8-b276-15fdc355c8d0)
+    ### 1-2. Ｄistributed Switch版本選擇
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/796ab1fb-db5f-4e85-b15a-6e7a78e44934)
+    > 可點選每個版本功能差異說明
+    ### 1-3. 設定組態
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/3b01b977-dde9-4ab3-a89b-2bc8d85262d3)
+    ### 1-4. 即將完成
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/208c4b42-f9a5-4068-bb5c-b1c7f7e1a4d6)
+
 - # 存儲配置
   > 達成目標如下圖，一台ESXi掛載Local Datastore & NFS Mount
   ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/893709ff-3ff5-41ad-a7ed-b91fb7e124ba)
