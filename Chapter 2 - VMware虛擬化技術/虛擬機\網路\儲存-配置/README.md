@@ -45,6 +45,27 @@
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/3b01b977-dde9-4ab3-a89b-2bc8d85262d3)
     ### 1-4. 即將完成
     ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/208c4b42-f9a5-4068-bb5c-b1c7f7e1a4d6)
+    ### 1-5. 檢查vDS( Distributed Switch)是否建置出來
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/96d82ae0-14db-4f87-9ec8-f5961f0ee292)
+    ## 2. 綁定ESXI HOST
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/13cc6930-e35b-4f08-84e8-146a351777c5)
+    ### 2-1. 選取工作
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/583ef3ea-0ee2-4716-9804-352fc341e135)
+    ### 2-2. 選取主機
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/3f6628f6-b083-4cba-a428-a73c4046b218)
+    ### 2-3. 管理實體介面卡
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/e82c1167-6865-460e-b322-f910e6b77a1a)
+    > 此教學使用vmnic2 and vmnic3進行上行指派
+    ### 2-4. 管理VMkernel介面卡
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/4091dae1-c55f-4e75-8dc6-29dd04d10007)
+    > 如沒有要移轉VMkernel的話，可直接下一步
+    ### 2-5. 移轉虛擬機器網路
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/9142ab94-6df1-4ab8-8e82-0b4ed12e5b20)
+    > 如沒有既有的VSS要移轉，可直接下一步
+    ### 2-6. 即將完成
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/92fa2f2c-4bf0-46ec-b90b-e2c5ec329648)
+    ### 2-7. 檢查
+    ![image](https://github.com/Jerrychanglab/VMware-train/assets/39659664/bbab0430-a4f8-456f-aeb9-eee23b70c2c5)
 
 - # 存儲配置
   > 達成目標如下圖，一台ESXi掛載Local Datastore & NFS Mount
